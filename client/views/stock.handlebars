@@ -1,0 +1,28 @@
+<div class="card" style="margin:20px 10px">
+    <div class="card-content">
+        <h4 style="margin-top:0px">Full period data</h4>
+        <h5 id="cname"style="margin-top:0px ;">Company Name</h5>
+        <div id="full-chart" class="charter">
+            <canvas id="fullChart"></canvas>
+        </div>
+    </div>
+</div>
+<div class="card" style="margin:20px 10px">
+    <div class="card-content">
+        <div class="table" id="table"></div>
+        <div class="pages" id="pages"></div>
+        <div id="chart-container" class="charter">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="/js/charts.js"></script>
+<script>
+    var decodedJson = decodeURIComponent("{{{eJson}}}");
+    var json = JSON.parse(decodedJson);
+    document.addEventListener('DOMContentLoaded', function () {
+        PlotAll(json, 1);
+        PlotMain(json);
+    });
+</script>

@@ -1,0 +1,20 @@
+{
+  "name": "coensobec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Sarbik, Dwai",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "engines": {
+    "node": "10.14.2"
+  }
+}
